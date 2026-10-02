@@ -1,5 +1,5 @@
 function enviarMensagem(event) {
-    event.preventDefault() // Impede o envio padrão do formulário
+    event.preventDefault()
 
 const nome = document.getElementById('nome').value
 const mensagem = document.getElementById('mensagem').value
