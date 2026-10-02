@@ -1,141 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Matheus Pagaime | Portfólio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a45">
+  <meta name="description" content="Portfólio de Matheus Pagaime: engenharia de soluções, desenvolvimento web, dados e projetos criativos.">
+  <title>Matheus Pagaime | Portfólio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="fundo"></div>
-    <nav class="navbar">
-        <ul class="menu">
-            <li><a href="#inicio" class="menu-link">Início</a></li>
-            <li><a href="#sobre" class="menu-link">Sobre Mim</a></li>
-            <li><a href="#projetos" class="menu-link">Projetos</a></li>
-            <li><a href="#contato" class="menu-link">Contato</a></li>
-        </ul>
-    </nav>
-
-    <main id="inicio" class="cabecalho">
-        <img src="./img/pagaime2.jpeg" alt="Matheus Pagaime" class="foto-perfil">
-        <h1>Matheus Pagaime</h1>
-        <p class="subtitulo">Desenvolvedor Full-Stack</p>
-    </main>
-
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Sou um entusiasta da tecnologia que adora explorar a intersecção entre o mundo
-                digital e o cotidiano. Minha jornada começou com o curso técnico em Desenvolvimento de Sistemas (ETEC),
-                onde descobri minha paixão por programação, e hoje aprofundo meus conhecimentos como estudante de
-                Ciência da Computação na Universidade São Judas Tadeu. <br><br>
-                Hoje em dia, meus estudos estão focados nas áreas que mais me fascinam: Machine Learning, Ciência de
-                Dados e Gamificação. Acredito que a tecnologia tem o poder de criar experiências mais inteligentes e
-                engajadoras, e é essa crença que guia meus projetos e minha carreira. <br><br>
-                Atualmente como Estagiário em Engenharia de Soluções na NICE, tenho a oportunidade de vivenciar essa
-                filosofia na prática. Atuo no desenvolvimento de soluções personalizadas, participando ativamente de
-                todo o processo técnico e funcional.
-            </p>
-        </div>
-    </section>
-
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Meus Projetos</h2>
-        <div class="projetos-caixa">
-            <div class="projeto-card">
-                <a href="https://github.com/MatheusPagaime17/Analise-de-Sentimento-Reviews-Steam" target="_blank">
-                    <img src="./img/projeto1.png" alt="Projeto IA" class="projeto-imagem">
-                </a>
-                <div class="caixa-texto-projeto">
-                    <a href="https://github.com/MatheusPagaime17/Analise-de-Sentimento-Reviews-Steam" target="_blank"
-                        class="projeto-link">
-                        <h3 class="projeto-nome">Analisador de Sentimentos com IA</h3>
-                        <p class="projeto-descricao">Este projeto utiliza Processamento de Linguagem Natural (PLN) para
-                            construir um modelo de Inteligência Artificial capaz de classificar reviews do jogo Elden
-                            Ring
-                            da Steam como positivas ou negativas.</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="projeto-card">
-                <a href="https://matheuspagaime17.github.io/A7X-fan-site" target="_blank">
-                    <img src="./img/projeto2.png" alt="Projeto Calculadora Persona" class="projeto-imagem">
-                </a>
-                <div class="caixa-texto-projeto">
-                    <a href="https://matheuspagaime17.github.io/A7X-fan-site" target="_blank" class="projeto-link">
-                        <h3 class="projeto-nome">Site Vitrine: Avenged Sevenfold - Show no Brasil</h3>
-                        <p class="projeto-descricao">Um site vitrine imersivo e totalmente responsivo, desenvolvido como
-                            um projeto de estudo para aprofundar e demonstrar habilidades em desenvolvimento web. O
-                            projeto simula a página de divulgação para o show da banda Avenged Sevenfold no
-                            Brasil.</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="projeto-card">
-                <a href="https://github.com/MatheusPagaime17/Projeto-AutomatoGame" target="_blank">
-                    <img src="./img/projeto3.png" alt="Projeto Game Compiladores" class="projeto-imagem">
-                </a>
-                <div class="caixa-texto-projeto">
-                    <a href="https://github.com/MatheusPagaime17/Projeto-AutomatoGame" target="_blank"
-                        class="projeto-link">
-                        <h3 class="projeto-nome">Projeto De Compiladores e Autômatos Gamificado</h3>
-                        <p class="projeto-descricao">Um pequeno projeto de jogo desenvolvido no GameMaker Studio 2, que
-                            consistiu no desenvolvimento de dois sistemas clássicos: Uma máquina de doces e Um sistema
-                            de
-                            elevador, aplicando na prática os conceitos de Autômatos Finitos.</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato" class="contato">
-        <h2 class="contato-titulo">Entre em contato</h2>
-        <form class="formulario-contato" id="formulario" onsubmit="enviarMensagem(event)">
-            <div class="grupo-form">
-                <input placeholder="Nome" class="campo-form" id="nome">
-            </div>
-            <div class="grupo-form">
-                <textarea placeholder="Digite sua mensagem" class="campo-form" rows="4" id="mensagem"></textarea>
-            </div>
-            <button type="submit" class="botao-form">
-                <span class="botao-texto">Enviar Whatsapp</span>
-            </button>
-        </form>
-    </section>
-
-    <footer class="rodape">
-        <p class="rodape-texto">Desenvolvido por Matheus Pagaime &copy; 2025</p>
-        <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/matheus-pagaime" target="_blank" class="rede-social-link">
-                <img src="./img/linkedin.png" alt="LinkedIn" class="rede-social-icone">
-            </a>
-            <a href="https://github.com/MatheusPagaime17" target="_blank" class="rede-social-link">
-                <img src="./img/github.png" alt="GitHub" class="rede-social-icone">
-            </a>
-            <a href="mailto:matheus.pagaime05@gmail.com" class="rede-social-link">
-                <img src="./img/email.png" alt="Email" class="rede-social-icone">
-            </a>
-        </div>
-        <a href="./docs/MatheusPagaimeCV.pdf" download class="link-cv">
-            <button type="button" class="botao-cv">
-                <span class="botaocv-texto">Baixar CV</span>
-            </button>
-        </a>
-
-
-
-    </footer>
-
-    <script src="script.js"></script>
-
-
-
+  <div class="scene" aria-hidden="true"><div class="scene__glow"></div><div class="scene__ring scene__ring--one"></div><div class="scene__ring scene__ring--two"></div><div class="scene__current"></div><div class="scene__grain"></div></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Matheus Pagaime, ir para início"><span class="brand__mark">MP<span>.</span></span><span class="brand__text">MATHEUS PAGAIME<br><small>PORTFÓLIO / 2026</small></span></a>
+      <div class="topbar__right"><span class="signal"><span class="signal__dot"></span> DISPONÍVEL PARA CONEXÕES</span><span class="topbar__index" id="top-index">01 / 07</span></div>
+    </header>
+    <div class="layout">
+      <nav class="game-menu" aria-label="Navegação principal">
+        <div class="game-menu__eyebrow">SELECT / SELECIONAR</div>
+        <a class="game-menu__item is-active" href="#inicio" data-section="inicio" aria-current="page"><span class="game-menu__number">01</span><span>INÍCIO</span><span class="game-menu__arrow" aria-hidden="true">↗</span></a>
+        <a class="game-menu__item" href="#experiencias" data-section="experiencias"><span class="game-menu__number">02</span><span>EXPERIÊNCIAS</span><span class="game-menu__arrow" aria-hidden="true">↗</span></a>
+        <a class="game-menu__item" href="#formacoes" data-section="formacoes"><span class="game-menu__number">03</span><span>FORMAÇÕES</span><span class="game-menu__arrow" aria-hidden="true">↗</span></a>
+        <a class="game-menu__item" href="#cursos" data-section="cursos"><span class="game-menu__number">04</span><span>CURSOS DESTACADOS</span><span class="game-menu__arrow" aria-hidden="true">↗</span></a>
+        <a class="game-menu__item" href="#skills" data-section="skills"><span class="game-menu__number">05</span><span>SKILLS</span><span class="game-menu__arrow" aria-hidden="true">↗</span></a>
+        <a class="game-menu__item" href="#projetos" data-section="projetos"><span class="game-menu__number">06</span><span>PROJETOS</span><span class="game-menu__arrow" aria-hidden="true">↗</span></a>
+        <a class="game-menu__item" href="#contato" data-section="contato"><span class="game-menu__number">07</span><span>CONTATO</span><span class="game-menu__arrow" aria-hidden="true">↗</span></a>
+        <div class="game-menu__hint">↑ ↓ NAVEGAR <span>↵ SELECIONAR</span></div>
+      </nav>
+      <main class="stage" id="main-content">
+        <section class="panel panel--home is-active" id="inicio" aria-labelledby="inicio-title">
+          <div class="home-copy"><p class="kicker"><span class="kicker__line"></span> OLÁ, EU SOU</p><h1 id="inicio-title">MATHEUS<br><span>PAGAIME</span><i>.</i></h1><p class="home-copy__role">PRÉ-VENDAS <span>✦</span> ENGENHARIA DE SOLUÇÕES</p><p class="home-copy__intro">Conecto necessidades de clientes a soluções técnicas. Atuo em pré-vendas e exploro desenvolvimento web, dados e inteligência artificial com curiosidade e criatividade.</p><div class="actions"><a class="action action--primary" href="#projetos">EXPLORAR PROJETOS <span aria-hidden="true">↗</span></a><a class="action action--ghost" href="#contato">VAMOS CONVERSAR <span aria-hidden="true">→</span></a></div><a class="home-copy__cv" href="docs/MatheusPagaimeCV.pdf" download>↓ BAIXAR CURRÍCULO EM PDF</a></div>
+          <div class="hero-art" aria-hidden="true"><span class="hero-art__orbit hero-art__orbit--one"></span><span class="hero-art__orbit hero-art__orbit--two"></span><span class="hero-art__label">PLAYER 01 / MATHEUS</span><img src="img/tusk.jpeg" alt=""><span class="hero-art__slash"></span></div><div class="home-corner" aria-hidden="true">01 <span>—</span> 07<br><small>WELCOME TO MY WORLD</small></div>
+        </section>
+        <section class="panel" id="experiencias" aria-labelledby="experiencias-title">
+          <div class="panel-heading"><p class="eyebrow">02 / TRAJETÓRIA PROFISSIONAL</p><h2 id="experiencias-title">EXPERIÊNCIAS<span>.</span></h2><p>Onde tecnologia, pessoas e desafios reais se encontram.</p></div>
+          <div class="timeline">
+            <article class="timeline-card"><div class="timeline-card__side"><span>JUL 2026 — ATUAL</span><b></b></div><div class="timeline-card__body"><span class="mini-label">A5 SOLUTIONS · SÃO PAULO · HÍBRIDO</span><h3>Analista de pré-vendas</h3><p>Apresento a viabilidade técnica de projetos, identifico necessidades e oportunidades junto aos clientes e elaboro propostas comerciais e técnicas voltadas à satisfação e fidelização.</p><div class="tag-row"><span>Pré-vendas</span><span>Viabilidade técnica</span><span>Propostas</span></div></div></article>
+            <article class="timeline-card"><div class="timeline-card__side"><span>DEZ 2024 — JUL 2026</span><b></b></div><div class="timeline-card__body"><span class="mini-label">NICE · SÃO PAULO · PRESENCIAL</span><h3>Intern Portfolio Solution Engineer</h3><p>Estágio em engenharia de soluções com foco em descoberta, coleta de requisitos, configuração, validação e demonstração de soluções do portfólio cloud.</p><div class="tag-row"><span>Engenharia de soluções</span><span>Cloud</span><span>Demonstrações</span></div></div></article>
+          </div>
+          <a class="inline-link" href="https://www.linkedin.com/in/matheus-pagaime/" target="_blank" rel="noopener noreferrer">VER TRAJETÓRIA NO LINKEDIN <span>↗</span></a>
+        </section>
+        <section class="panel" id="formacoes" aria-labelledby="formacoes-title">
+          <div class="panel-heading"><p class="eyebrow">03 / BASE DE CONHECIMENTO</p><h2 id="formacoes-title">FORMAÇÕES<span>.</span></h2><p>Uma jornada de aprendizado em desenvolvimento e ciência da computação.</p></div>
+          <div class="formation-grid"><article class="info-card"><div class="info-card__top"><span class="info-card__icon">01</span><span class="mini-label">2023 — 2026</span></div><h3>Ciência da Computação</h3><p class="info-card__place">Universidade São Judas Tadeu</p><p>Bacharelado no campus Paulista, com estudos em fundamentos de computação e criação de soluções digitais.</p></article><article class="info-card"><div class="info-card__top"><span class="info-card__icon">02</span><span class="mini-label">2020 — 2022</span></div><h3>Desenvolvimento de Sistemas</h3><p class="info-card__place">ETEC Prof.ª Ermelinda Giannini Teixeira</p><p>Curso técnico integrado ao ensino médio, onde começou minha trajetória em programação.</p></article></div>
+        </section>
+        <section class="panel" id="cursos" aria-labelledby="cursos-title">
+          <div class="panel-heading"><p class="eyebrow">04 / APRENDIZADO CONTÍNUO</p><h2 id="cursos-title">CURSOS <span>DESTACADOS.</span></h2><p>Foco recente em plataformas de IA conversacional, além de dados e análise.</p></div>
+          <div class="course-list"><article class="course"><span>01</span><div><h3>Omilia</h3><p>Capacitação em ferramentas de Conversational AI</p></div><b>↗</b></article><article class="course"><span>02</span><div><h3>Cognigy</h3><p>Capacitação em agentes e experiências conversacionais</p></div><b>↗</b></article><article class="course"><span>03</span><div><h3>Become a Data Scientist</h3><p>LinkedIn Learning · Trilha de aprendizagem · 23 horas</p></div><b>↗</b></article><article class="course"><span>04</span><div><h3>Power BI: sintetize grandes volumes de dados</h3><p>Anhembi Morumbi · 78 horas</p></div><b>↗</b></article></div>
+          <a class="inline-link" href="https://www.linkedin.com/in/matheus-pagaime/" target="_blank" rel="noopener noreferrer">VER CURSOS E CERTIFICADOS NO LINKEDIN <span>↗</span></a>
+        </section>
+        <section class="panel" id="skills" aria-labelledby="skills-title">
+          <div class="panel-heading"><p class="eyebrow">05 / ARSENAL CRIATIVO</p><h2 id="skills-title">SKILLS<span>.</span></h2><p>Ferramentas e conhecimentos que utilizo para pensar e construir soluções.</p></div>
+          <div class="skills-grid"><article class="skill-group"><span>A /</span><h3>DESENVOLVIMENTO</h3><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Java</span><span>PHP</span><span>C#</span><span>.NET</span></div></article><article class="skill-group"><span>B /</span><h3>DADOS &amp; CLOUD</h3><div class="skill-tags"><span>MySQL</span><span>Banco de dados</span><span>Ciência de dados</span><span>Power BI</span><span>AWS</span><span>Azure</span></div></article><article class="skill-group"><span>C /</span><h3>DESIGN &amp; MÉTODOS</h3><div class="skill-tags"><span>Figma</span><span>UML</span><span>Scrum</span><span>Prototipação</span><span>Photoshop</span></div></article><article class="skill-group"><span>D /</span><h3>COLABORAÇÃO</h3><div class="skill-tags"><span>Comunicação</span><span>Trabalho em equipe</span><span>Criatividade</span><span>Inglês avançado</span></div></article></div>
+        </section>
+        <section class="panel panel--projects" id="projetos" aria-labelledby="projetos-title">
+          <div class="panel-heading"><p class="eyebrow">06 / PORTFÓLIO DE PROJETOS</p><h2 id="projetos-title">PROJETOS<span>.</span></h2><p>Experimentos e produtos que mostram como gosto de aprender construindo.</p></div>
+          <div class="project-grid"><article class="project-card"><div class="project-card__visual"><img src="img/projeto2.png" alt="Interface da calculadora de fusão Persona" loading="lazy"><span>WEB APP / GAME DATA</span></div><div class="project-card__body"><h3>Persona Fusion Hub</h3><p>Calculadoras de fusão para Persona 3 Reload e Persona 5 Royal, com busca reversa, fichas e minigame.</p><div class="project-card__links"><a href="https://matheuspagaime17.github.io/Persona-Fusion-Calculator/" target="_blank" rel="noopener noreferrer">ABRIR PROJETO ↗</a><a href="https://github.com/MatheusPagaime17/Persona-Fusion-Calculator" target="_blank" rel="noopener noreferrer">CÓDIGO ↗</a></div></div></article><article class="project-card"><div class="project-card__visual"><img src="img/projeto1.png" alt="Visualização do projeto de análise de sentimentos" loading="lazy"><span>IA / NLP</span></div><div class="project-card__body"><h3>Análise de sentimentos</h3><p>Classificação de avaliações de Elden Ring na Steam usando processamento de linguagem natural.</p><div class="project-card__links"><a href="https://github.com/MatheusPagaime17/Analise-de-Sentimento-Reviews-Steam" target="_blank" rel="noopener noreferrer">VER NO GITHUB ↗</a></div></div></article><article class="project-card"><div class="project-card__visual"><img src="img/projeto3.png" alt="Tela do jogo educativo sobre autômatos" loading="lazy"><span>GAME / EDUCAÇÃO</span></div><div class="project-card__body"><h3>Autômato Game</h3><p>Jogo educativo que aplica conceitos de compiladores e autômatos finitos em sistemas interativos.</p><div class="project-card__links"><a href="https://github.com/MatheusPagaime17/Projeto-AutomatoGame" target="_blank" rel="noopener noreferrer">VER NO GITHUB ↗</a></div></div></article><article class="project-card"><div class="project-card__visual project-card__visual--type"><strong>P5<span>/</span>API</strong><span>API / JAVASCRIPT</span></div><div class="project-card__body"><h3>Persona 5 API</h3><p>API de dados das Personas de Persona 5 Royal, criada para alimentar experiências e ferramentas de fãs.</p><div class="project-card__links"><a href="https://github.com/MatheusPagaime17/persona5-api" target="_blank" rel="noopener noreferrer">VER NO GITHUB ↗</a></div></div></article></div>
+          <a class="inline-link" href="https://github.com/MatheusPagaime17?tab=repositories" target="_blank" rel="noopener noreferrer">EXPLORAR TODOS OS REPOSITÓRIOS <span>↗</span></a>
+        </section>
+        <section class="panel panel--contact" id="contato" aria-labelledby="contato-title">
+          <div class="panel-heading"><p class="eyebrow">07 / PRÓXIMA CONEXÃO</p><h2 id="contato-title">VAMOS <span>CONVERSAR.</span></h2><p>Tem uma ideia, oportunidade ou só quer trocar uma conversa sobre tecnologia?</p></div>
+          <div class="contact-grid"><div class="contact-main"><p class="contact-main__big">SUA PRÓXIMA<br>IDEIA COMEÇA<br><em>AQUI ↗</em></p><a class="action action--primary" href="mailto:matheus.pagaime05@gmail.com">ENVIAR E-MAIL <span>↗</span></a><a class="contact-email" href="mailto:matheus.pagaime05@gmail.com">matheus.pagaime05@gmail.com</a></div><div class="contact-side"><form id="formulario" class="contact-form"><h3>CHAMAR NO WHATSAPP</h3><label for="nome">SEU NOME</label><input id="nome" name="nome" type="text" placeholder="Como posso te chamar?" autocomplete="name" required maxlength="80"><label for="mensagem">SUA MENSAGEM</label><textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." rows="4" required maxlength="1000"></textarea><button type="submit" class="action action--secondary">ABRIR WHATSAPP <span>↗</span></button><p class="contact-form__note">A mensagem será aberta no WhatsApp para você revisar e enviar.</p></form><div class="social-links"><a href="https://www.linkedin.com/in/matheus-pagaime/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="https://github.com/MatheusPagaime17" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="docs/MatheusPagaimeCV.pdf" download>BAIXAR CV ↓</a></div></div></div>
+        </section>
+      </main>
+    </div>
+    <footer class="bottom-bar"><span>© <span id="year">2026</span> MATHEUS PAGAIME</span><span class="bottom-bar__center">DESIGN &amp; CODE WITH PURPOSE</span><span>SÃO PAULO, BRASIL <span class="bottom-bar__star">✳</span></span></footer>
+  </div>
+  <script src="script.js"></script>
 </body>
-
 </html>
